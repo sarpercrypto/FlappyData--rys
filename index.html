@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flappy Data - Irys Edition</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="start-screen">
+    <img src="assets/a.png" alt="Irys Logo" style="width: 100px; margin-bottom: 10px;">
+    <h1>Flappy Data - Irys</h1>
+    <p>Enter your nickname to start:</p>
+    <input type="text" id="nickname" placeholder="Your nickname" />
+    <button onclick="startGame()">Start Game</button>
+    <p class="designer">Designed by <a href="https://x.com/sarpercrypto" target="_blank">@sarpercrypto</a></p>
+  </div>
+
+  <div id="game-container" style="display:none;">
+    <canvas id="gameCanvas" width="480" height="640"></canvas>
+    <div id="score-screen" style="display:none;">
+      <p id="final-score"></p>
+      <button onclick="shareOnX()">Share on X</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <div id="overlay"></div>
+</body>
+</html>
